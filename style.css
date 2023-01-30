@@ -1,0 +1,135 @@
+:root {
+  --backgroundRed: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --greenHover: hsla(154, 59%, 51%, 0.5);
+  --blue: hsl(248, 32%, 49%);
+  --darkBlue: hsl(249, 10%, 26%);
+  --grayishBlue: hsl(246, 25%, 77%);
+}
+
+body {
+  background-color: var(--backgroundRed);
+  background-image: url(images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+h1 {
+  margin: 5rem 2rem 0rem;
+}
+
+input {
+  font-family: inherit;
+  font-weight: 600;
+  width: 95%;
+  padding: 1rem;
+  margin: 0.3rem 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px var(--grayishBlue) solid;
+}
+
+input[type="submit"] {
+  font-family: inherit;
+  color: white;
+  background-color: var(--green);
+  border: none;
+  text-transform: uppercase;
+  box-shadow: 0px 2px rgba(128, 128, 128, 0.712);
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: var(--greenHover);
+}
+
+input[name="firstName"]:invalid + label[for="firstName"] {
+  display: flex;
+}
+
+input[name="lastName"]:invalid + label[for="lastName"] {
+  display: flex;
+}
+
+input[name="email"]:invalid + label[for="email"] {
+  display: flex;
+}
+
+input[name="password"]:invalid + label[for="password"] {
+  display: flex;
+}
+
+label {
+  display: none;
+  justify-content: end;
+  padding: 0 1rem;
+  font-style: italic;
+  font-size: 12px;
+  color: var(--backgroundRed);
+}
+
+.learnToCode {
+  margin: 0 1.5rem;
+}
+
+.tryItFree7days {
+  background-color: var(--blue);
+  border-radius: 10px;
+  padding: 0.5rem 4rem;
+  margin: 4rem 1.5rem 1.5rem;
+  box-shadow: 0px 8px rgba(128, 128, 128, 0.637);
+}
+
+.formContainer {
+  overflow: hidden;
+  background-color: white;
+  color: var(--grayishBlue);
+  border-radius: 10px;
+  margin: 1.5rem;
+  padding: 2rem 1rem;
+  box-shadow: 0px 8px rgba(128, 128, 128, 0.637);
+}
+
+.termsAndServices {
+  font-size: 0.75em;
+}
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 2.75rem;
+    margin: 0;
+  }
+
+  .mainContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .learnToCode {
+    padding: 8rem;
+  }
+
+  .leftSide {
+    text-align: left;
+    width: 50%;
+    /* background-color: yellow; */
+  }
+
+  .rightSide {
+    width: 50%;
+    /* background-color: blue; */
+  }
+}
