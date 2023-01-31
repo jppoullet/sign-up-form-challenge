@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor solution](https://www.frontendmentor.io/solutions/sign-up-form-challenge-HBlbEVcquM)
+- Live Site URL: [https://jppoullet.github.io/sign-up-form-challenge/](https://jppoullet.github.io/sign-up-form-challenge/)
 
 ## My process
 
