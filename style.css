@@ -107,7 +107,7 @@ label {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 850px) {
   h1 {
     font-size: 2.75rem;
     margin: 0;
@@ -119,7 +119,7 @@ label {
   }
 
   .learnToCode {
-    padding: 8rem;
+    padding: 2rem 0;
   }
 
   .leftSide {
