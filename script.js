@@ -7,52 +7,40 @@ const inputPassword = document.querySelector("input[name='password']");
 
 inputFirstName.addEventListener("invalid", function (event) {
   if (event.target.validity.valueMissing) {
-    event.target.setCustomValidity(" ");
-    document.querySelector("label[for='firstName']").textContent =
-      "First Name cannot be empty";
+    document.querySelector('label[for="firstName"]').style.display = "flex";
   }
 });
 
 inputFirstName.addEventListener("change", function (event) {
-  //   event.target.setCustomValidity("");
-  document.querySelector("label[for='firstName']").textContent = "";
+  document.querySelector("label[for='firstName']").style.display = "none";
 });
 
 inputLastName.addEventListener("invalid", function (event) {
   if (event.target.validity.valueMissing) {
-    event.target.setCustomValidity(" ");
-    document.querySelector("label[for='lastName']").textContent =
-      "Last Name cannot be empty";
+    document.querySelector('label[for="lastName"]').style.display = "flex";
   }
 });
 
 inputLastName.addEventListener("change", function (event) {
-  //   event.target.setCustomValidity("");
-  document.querySelector("label[for='lastName']").textContent = "";
+  document.querySelector("label[for='lastName']").style.display = "none";
 });
 
 inputEmail.addEventListener("invalid", function (event) {
   if (event.target.validity.valueMissing) {
-    event.target.setCustomValidity("INvalid Email");
-    document.querySelector("label[for='email']").textContent =
-      "Looks like this is not an email";
+    document.querySelector('label[for="email"]').style.display = "flex";
   }
 });
 
 inputEmail.addEventListener("valid", function (event) {
-  event.target.setCustomValidity("");
-  document.querySelector("label[for='email']").textContent = "";
+  document.querySelector("label[for='email']").style.display = "none";
 });
 
 inputPassword.addEventListener("invalid", function (event) {
   if (event.target.validity.valueMissing) {
-    event.target.setCustomValidity(" ");
-    document.querySelector("label[for='password']").textContent =
-      "Password cannot be empty";
+    document.querySelector('label[for="password"]').style.display = "flex";
   }
 });
 
 inputPassword.addEventListener("change", function (event) {
-  //   event.target.setCustomValidity("");
-  document.querySelector("label[for='Password']").textContent = "";
+  document.querySelector("label[for='password']").style.display = "none";
 });

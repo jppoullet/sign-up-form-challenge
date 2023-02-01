@@ -46,20 +46,20 @@ input[type="submit"]:hover {
   background-color: var(--greenHover);
 }
 
-input[name="firstName"]:invalid + label[for="firstName"] {
-  display: flex;
+label[for="firstName"] {
+  display: none;
 }
 
-input[name="lastName"]:invalid + label[for="lastName"] {
-  display: flex;
+label[for="lastName"] {
+  display: none;
 }
 
-input[name="email"]:invalid + label[for="email"] {
-  display: flex;
+label[for="email"] {
+  display: none;
 }
 
-input[name="password"]:invalid + label[for="password"] {
-  display: flex;
+label[for="password"] {
+  display: none;
 }
 
 label {
